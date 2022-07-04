@@ -14,7 +14,7 @@
 }
 
 .navbar{
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(117, 117, 117);
   justify-content: flex-start;
 }
 .brand-name{
@@ -41,4 +41,13 @@
 }
 .link:hover{
   color: rgb(139, 0, 0);
+}
+.div-saludo{
+  width: 80vw;
+  height: 40vh;
+  margin: 10vw;
+}
+.div-saludo h3{
+  color: black;
+  height: auto;  
 }

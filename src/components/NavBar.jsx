@@ -1,4 +1,4 @@
-
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -15,7 +15,7 @@ const NavBar = () => {
           <a className="link" href="/">Contacto</a>
         </div>
         <div className="d-flex justify-content-center">
-          <a href="/"><img src='/images/carrito-de-compras.png' href="/" alt="" /></a>
+          <CartWidget/>
         </div>
     </div>
   )
