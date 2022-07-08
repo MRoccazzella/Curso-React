@@ -1,9 +1,9 @@
 
 
-export const ItemListContainer = (props) => {
+export const ItemListContainer = ({saludoNombre}) => {
   return (
     <div className="div-saludo d-flex justify-content-center">
-        <h3 >Bienvenido {props.saludoNombre} </h3>
+        <h3 >Bienvenido {saludoNombre} </h3>
     </div>
   )
 }

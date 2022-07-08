@@ -44,10 +44,13 @@
 }
 .div-saludo{
   width: 80vw;
-  height: 40vh;
+  height: 100px;
   margin: 10vw;
 }
 .div-saludo h3{
   color: black;
-  height: auto;  
+  height: 100px;  
+}
+.contenedor-botonero{
+  width: 50px;
 }
