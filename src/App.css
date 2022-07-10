@@ -52,5 +52,11 @@
   height: 100px;  
 }
 .contenedor-botonero{
-  width: 50px;
+  width: auto;
+}
+.contenedor-numero{
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }

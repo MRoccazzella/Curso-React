@@ -5,15 +5,27 @@ import Botonero from './components/Botonero';
 import { useState} from 'react';
 
 function App() {
+  const stock = 10
   const [numero, setNumero] = useState(0)
   const incrementar = (e) => {
-    e.preventDefault()
-    setNumero(numero + 1)
+    if(numero < stock){
+      e.preventDefault()
+      setNumero(numero + 1)
+    }else{
+      setNumero("No hay stock")
+    }
   }
   const decrementar = (e) => {
-    e.preventDefault()
-    setNumero(numero - 1)
-  }
+    if(numero === 0){
+      setNumero(numero)
+    }else if(numero === "No hay stock"){
+      setNumero(stock)
+    }else{
+      e.preventDefault()
+      setNumero(numero - 1)
+    }
+}
+  
   return (
   <>
     <NavBar/>
