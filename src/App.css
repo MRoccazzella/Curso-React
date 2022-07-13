@@ -43,20 +43,45 @@
   color: rgb(139, 0, 0);
 }
 .div-saludo{
-  width: 80vw;
+  width: 200px;
   height: 100px;
-  margin: 10vw;
+  
+  text-align: center;
 }
 .div-saludo h3{
   color: black;
   height: 100px;  
+  width: 100vw;
+  
 }
 .contenedor-botonero{
   width: auto;
+  padding: 5px;
 }
 .contenedor-numero{
   margin-bottom: 0;
   margin-left: 20px;
   margin-right: 20px;
   
+}
+.item-container{
+
+  width: 75vw;
+  height: max-content;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 12.5vw;
+  margin-top: 80px;
+  justify-content: space-evenly;
+  
+
+}
+.texto-bienvenida{
+  width: 200px;
+}
+.card{
+  margin: 20px;
+  width: 200px;
+  justify-content: space-evenly;
+  border: solid 1px black;
 }

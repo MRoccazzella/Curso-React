@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import productos from '../mock/products'
 
 
 const ItemCount = () => {
