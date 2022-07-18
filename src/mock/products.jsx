@@ -13,7 +13,7 @@ const productos = [
         id: 2,
         nombre: "STRAWBERRY ICE CREAM BOX",
         precio: 3200,
-        stock: 10,
+        stock: 11,
         img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/206/252/products/producto1-9d24324be1add642a616201486356378-480-0.jpg',
         category: "Boxes",
         descripcion: "blablabla"
@@ -22,7 +22,7 @@ const productos = [
         id: 3,
         nombre: "BURGER LIFE BOX",
         precio: 3200,
-        stock: 10,
+        stock: 20,
         img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/206/252/products/producto1-9d24324be1add642a616201486356378-480-0.jpg',
         category: "Boxes",
         descripcion: "blablabla"
@@ -31,7 +31,7 @@ const productos = [
         id: 4,
         nombre: "SUPER KID BOX",
         precio: 3500,
-        stock: 10,
+        stock: 8,
         img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/206/252/products/producto1-9d24324be1add642a616201486356378-480-0.jpg',
         category: "Boxes",
         descripcion: "blablabla"

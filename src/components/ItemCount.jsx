@@ -2,10 +2,10 @@ import { useState } from "react"
 import productos from '../mock/products'
 
 
-const ItemCount = () => {
+const ItemCount = ({stock}) => {
     
-const [numero, setNumero] = useState(0)
-const stock = 10
+const [numero, setNumero] = useState(1)
+
   
 const incrementar = (e) => {
     if(numero < stock){
@@ -16,7 +16,7 @@ const incrementar = (e) => {
     }
   }
 const decrementar = (e) => {
-    if(numero === 0){
+    if(numero === 1){
       setNumero(numero)
     }else if(numero === "No hay stock"){
       setNumero(stock)

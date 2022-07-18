@@ -43,16 +43,24 @@
   color: rgb(139, 0, 0);
 }
 .div-saludo{
-  width: 200px;
-  height: 100px;
-  
+  width: 100vw;
+  height: auto;
+  background-color: black;
   text-align: center;
+  min-height: 100vh;
+}
+.div-saludo h2{
+  padding-top: 25px;
+  color: white;
+  height: auto;  
+  width: 100vw;
+  font-family: 'Bebas Neue', cursive;
 }
 .div-saludo h3{
-  color: black;
-  height: 100px;  
+  color: white;
+  height: auto;  
   width: 100vw;
-  
+  font-family: 'Bebas Neue', cursive;
 }
 .contenedor-botonero{
   width: auto;
@@ -62,7 +70,7 @@
   margin-bottom: 0;
   margin-left: 20px;
   margin-right: 20px;
-  
+  color: black;
 }
 .item-container{
 
@@ -83,5 +91,12 @@
   margin: 20px;
   width: 200px;
   justify-content: space-evenly;
-  border: solid 1px black;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+.img-card{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
 }
