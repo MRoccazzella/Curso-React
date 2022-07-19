@@ -3,6 +3,7 @@ import CartWidget from "./CartWidget";
 const NavBar = () => {
   return (
     <div className="navbar container-fluid">
+      
         <div className="contenedor-icono justify-content-center align-items-center">
           <img className="logo" src ='/images/icono-hamburguesa.png' alt="" />
           <div className="brand-name">

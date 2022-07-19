@@ -3,13 +3,13 @@ import {useState} from 'react';
 import productos from '../mock/products'
 import ItemList from './ItemList'
 
-export const ItemListContainer = () => {
+const ItemListContainer = () => {
   const [items,setItems] = useState([])
   useEffect(() => {
     const traerProductos = new Promise ((res,rej) => {
        setTimeout(() => {
         res(productos)
-       }, 2000);
+       }, 1000);
     })
     .then((data) =>{
       setItems(data)
