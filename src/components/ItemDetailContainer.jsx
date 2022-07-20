@@ -15,12 +15,12 @@ const ItemDetailContainer = () => {
         })
     }
     
-    useEffect(() =>{
+    useEffect((id) =>{
         itemPorId().then(res =>{
             setProduct(res)
         }
         )
-    },[])
+    },[id])
     
     return (
         <div>

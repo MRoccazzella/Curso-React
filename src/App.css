@@ -2,10 +2,10 @@
   text-align: center;
 }
 .contenedor-icono{
-  width: 15vw;
+  width: 20vw;
   height: 70px;
   display: flex;
-  
+  justify-content: flex-start;
 }
 .logo{
   padding: 0px 5px;
@@ -37,7 +37,18 @@
 .link{
   text-decoration: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+.link-activo{
+  text-decoration: none;
+  color: rgb(227,49,57);
+  font-size: 1.3em;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.link-activo:hover{
+  color: rgb(227,49,57);
 }
 .link:hover{
   color: rgb(227,49,57);
@@ -62,9 +73,19 @@
   width: 100vw;
   font-family: 'Bebas Neue', cursive;
 }
+.div-container-botonero{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
 .contenedor-botonero{
-  width: auto;
+  width: 150px;
   padding: 5px;
+  border: solid black;
+  border-radius: 10px;
+  
 }
 .contenedor-numero{
   margin-bottom: 0;
@@ -125,10 +146,17 @@
 }
 .itemDetail{
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
-.detail-title-container{
+.detail-info-container{
   padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: 100%;
 }
 .detail-title{
   color: rgb(227,49,57);

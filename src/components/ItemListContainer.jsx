@@ -1,14 +1,15 @@
-import {useEffect} from 'react';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import productos from '../mock/products'
 import ItemList from './ItemList'
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
   const [items,setItems] = useState([])
+  const {category} = useParams()
   useEffect(() => {
     const traerProductos = new Promise ((res,rej) => {
        setTimeout(() => {
-        res(productos)
+        res(category ? productos.filter(obj => obj.category === category) : productos)
        }, 1000);
     })
     .then((data) =>{
@@ -17,7 +18,7 @@ const ItemListContainer = () => {
     .catch((error) => {
       console.log(error)
     })
-  }, [])
+  }, [category])
   return (
     <div className="div-saludo">
         <h2 className='texto-bienvenida'>Bienvenido a la tienda de hamurguesas para el hogar</h2>

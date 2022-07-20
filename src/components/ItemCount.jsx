@@ -1,5 +1,4 @@
 import { useState } from "react"
-import productos from '../mock/products'
 
 
 const ItemCount = ({stock}) => {
@@ -12,7 +11,7 @@ const incrementar = (e) => {
       e.preventDefault()
       setNumero(numero + 1)
     }else{
-      setNumero("No hay stock")
+      setNumero(numero)
     }
   }
 const decrementar = (e) => {

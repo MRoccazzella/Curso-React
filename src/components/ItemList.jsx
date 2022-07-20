@@ -6,9 +6,9 @@ const ItemList = ({items}) => {
        <div className="item-container">
             {items.map((item) => {
                 return (
-                    <Link to={`/item/${item.id}`} style={{ textDecoration: "none" , color: "black"}}>
-                        <Item item={item} key={item.id}/>
-                    </Link>
+                    
+                    <Item item={item} key={item.id}/>
+                    
                     )
             })}
         </div>
