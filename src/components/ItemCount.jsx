@@ -1,12 +1,12 @@
 import { useState } from "react"
 
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock,onAdd}) => {
     
-const [numero, setNumero] = useState(1)
+  const [numero, setNumero] = useState(1)
 
   
-const incrementar = (e) => {
+  const incrementar = (e) => {
     if(numero < stock){
       e.preventDefault()
       setNumero(numero + 1)
@@ -14,7 +14,7 @@ const incrementar = (e) => {
       setNumero(numero)
     }
   }
-const decrementar = (e) => {
+  const decrementar = (e) => {
     if(numero === 1){
       setNumero(numero)
     }else if(numero === "No hay stock"){
@@ -23,13 +23,17 @@ const decrementar = (e) => {
       e.preventDefault()
       setNumero(numero - 1)
     }
-}
+  } 
   return (
-    <div className="contenedor-botonero d-flex justify-content-center">
-        <button className='botonera' onClick={decrementar}> - </button>
+    <div className="contenedor-botonero">
+      <div className=" d-flex justify-content-center">
+        <button className='botonera btn btn-dark' onClick={decrementar}> - </button>
         <h4 className="contenedor-numero">{numero}</h4>
-        <button className='botonera' onClick={incrementar}> + </button>
+        <button className='botonera btn btn-dark' onClick={incrementar}> + </button>
+      </div>
+      <button onClick={() => onAdd(numero)} className="mt-2 btn btn-ligth">Agregar al carrito</button>
     </div>
+    
   )
 }
 

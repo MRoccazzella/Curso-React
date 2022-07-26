@@ -82,11 +82,12 @@
 }
 .contenedor-botonero{
   width: 150px;
-  padding: 5px;
-  border: solid black;
+  padding: 15px;
+  border: solid rgb(109,117,125);
   border-radius: 10px;
   
 }
+
 .contenedor-numero{
   margin-bottom: 0;
   margin-left: 20px;
