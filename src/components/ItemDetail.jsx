@@ -1,14 +1,23 @@
 import { useState } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 const ItemDetail = ({ data }) => {
     const [cantidad,setCantidad] = useState(0)
-    const onAdd = (cant) => {
+    const MySwal = withReactContent(Swal)
+    const onAdd = (cant, swal) => {
         setCantidad(cant)
-    }
+        return swal.fire({
+            icon: 'success',
+            text: `Usted agrego ${cant} productos al carrito`
+        })
+            
+        
 
+    }
     return (
         <div className="routing-container">
             <div className="item-detail-container">
@@ -20,7 +29,7 @@ const ItemDetail = ({ data }) => {
                         <p className="detail-description">{data.descripcion}</p>
                         <p className="detail-precio">${data.precio}</p>
                         <div className="div-container-botonero">
-                            {cantidad === 0 ? <ItemCount stock={data.stock} onAdd={onAdd}/> : 
+                            {cantidad === 0 ? <ItemCount stock={data.stock} onAdd={onAdd} swal={MySwal}/> : 
                             <Link to = "/carrito">Finalizar compra</Link>}
                             
                         </div>
