@@ -3,20 +3,21 @@ import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import { useContext } from "react";
+import { CartContext } from "./Context/CartContext";
 
 
 const ItemDetail = ({ data }) => {
     const [cantidad,setCantidad] = useState(0)
     const MySwal = withReactContent(Swal)
+    const {addToCart} = useContext(CartContext)
     const onAdd = (cant, swal) => {
         setCantidad(cant)
+        addToCart(data,cant)
         return swal.fire({
             icon: 'success',
             text: `Usted agrego ${cant} productos al carrito`
         })
-            
-        
-
     }
     return (
         <div className="routing-container">
