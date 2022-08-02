@@ -1,7 +1,7 @@
 
 export const CartWidget = () => {
   return (
-    <div><a href="/"><img src='/images/carrito-de-compras.png' href="/" alt="" /></a></div>
+    <div><img src='/images/carrito-de-compras.png' href="/" alt="" /></div>
 
   )
 }

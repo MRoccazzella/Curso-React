@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { useContext } from "react";
-import { CartContext } from "./Context/CartContext";
+import { CartContext } from "../Context/CartContext";
 
 
 const ItemDetail = ({ data }) => {
