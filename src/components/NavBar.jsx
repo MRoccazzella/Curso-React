@@ -1,7 +1,10 @@
 import CartWidget from "./CartWidget";
 import {Link, NavLink} from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "./Context/CartContext";
 
 const NavBar = () => {
+  const {cart} = useContext(CartContext)
   return (
     <div className="navbar container-fluid">
       
@@ -20,7 +23,7 @@ const NavBar = () => {
           <NavLink to="/contacto" className={({isActive})=> isActive ? "link-activo": "link"}>Contacto</NavLink>
         </div>
         <div className="d-flex justify-content-center">
-          <CartWidget/>
+          {cart.length !== 0 && <Link to="/carrito"><CartWidget/></Link>}
         </div>
     </div>
   )
