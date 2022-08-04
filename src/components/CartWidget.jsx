@@ -1,7 +1,17 @@
+import { useContext } from "react"
+import { CartContext } from "../Context/CartContext"
 
-export const CartWidget = () => {
+const CartWidget = () => {
+  const {unidades} = useContext(CartContext)
+  const valor = unidades()
+  //const cart = (unidades) => {
+    //unidades > 0 ? <img src='/images/carrito-de-compras.png' href="/" alt="" /> <div>{unidades}</div> : <img src='/images/carrito-de-compras.png' href="/" alt="" />
+  //} 
   return (
-    <div><img src='/images/carrito-de-compras.png' href="/" alt="" /></div>
+    <div className="cartWidgetContainer">
+      <img src='/images/carrito-de-compras.png' href="/" alt="" />
+      <div className="cartUnidades">{valor}</div>
+    </div>
 
   )
 }

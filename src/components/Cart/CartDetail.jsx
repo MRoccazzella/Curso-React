@@ -19,7 +19,7 @@ const CartDetail = () => {
         ))
         }
         <div className="cartFinalContainer">
-            <h3 className="cartTotalPrice" >Total: ${total()}</h3>
+            <h3 className="cartTotalPrice">Total: ${total()}</h3>
             <h3 className="cartTotalPrice">Productos agregados: {unidades()}</h3>
             <button className="cartButtonEliminarTodos btn btn-danger" onClick={eliminarAll}>Eliminar Productos del carrito</button>
         </div>

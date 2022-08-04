@@ -3,26 +3,30 @@ import productos from '../mock/products'
 import ItemList from './ItemList'
 import Loader from './Loader/Loader';
 import { useParams } from 'react-router-dom';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 
 const ItemListContainer = () => {
   const [items,setItems] = useState([])
   const {category} = useParams()
   const [loader, setLoader] = useState(true)
+  
   useEffect(() => {
-    const traerProductos = new Promise ((res,rej) => {
-      setLoader(true)
-       setTimeout(() => {
-        res(category ? productos.filter(obj => obj.category === category) : productos)
-       }, 500);
-    })
-    .then((data) =>{
-      setItems(data)
-      setLoader(false)
-    })
-    .catch((error) => {
-      console.log(error)
-    })
-  }, [category])
+    setLoader(true)
+    const querydb = getFirestore()
+    const queryCollection = collection(querydb,'products')
+    if (category) {
+      const queryFilter = query(queryCollection, where('category', '==', category))
+      getDocs(queryFilter)
+      .then(res => setItems(res.docs.map(product => ({id: product.id,...product.data()}))))
+      .then(res => setLoader(false))
+    } else {
+      
+      getDocs(queryCollection)
+      .then(res => setItems(res.docs.map(product => ({id: product.id,...product.data()}))))
+      .then(res => setLoader(false))
+    }
+  },[category])
+  
   return (
     <>
       {loader ? <Loader/> : 
