@@ -20,7 +20,6 @@ const NavBar = () => {
           <NavLink to="/" className={({isActive})=> isActive ? "link-activo": "link"}>Home</NavLink>
           <NavLink to="/categorys/Boxes" className={({isActive})=> isActive ? "link-activo": "link"}>Burger Boxes</NavLink>
           <NavLink to="/categorys/Salsas" className={({isActive})=> isActive ? "link-activo": "link"}>Salsas</NavLink>
-          <NavLink to="/contacto" className={({isActive})=> isActive ? "link-activo": "link"}>Contacto</NavLink>
         </div>
         <div className="d-flex justify-content-center">
           {cart.length !== 0 && <Link to="/carrito"><CartWidget/></Link>}

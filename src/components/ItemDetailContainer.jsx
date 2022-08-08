@@ -2,7 +2,6 @@ import  { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from './ItemDetail'
 import Loader from "./Loader/Loader";
-import productos from '../mock/products'
 import { getFirestore, doc, getDoc} from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
