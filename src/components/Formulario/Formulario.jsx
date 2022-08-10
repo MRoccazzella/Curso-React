@@ -7,12 +7,12 @@ import withReactContent from 'sweetalert2-react-content'
 import { Link } from 'react-router-dom'
 
 const Formulario = () => {
-    const {cart, total} = useContext(CartContext)
+    const {cart, total, eliminarAll} = useContext(CartContext)
     let newDate = new Date()
+    const mySwal = withReactContent(Swal)
     const createOrder =(e) => {
-        const mySwal = withReactContent(Swal)
+        
 
-        e.preventDefault()
         const db = getFirestore()
         const orderCollectionQuery = collection(db,'orders')
         const order = {
@@ -25,19 +25,25 @@ const Formulario = () => {
             total: total()
         }
         addDoc(orderCollectionQuery,order).then((res) =>{
-            console.log(res.id)
+            
+            mySwal.fire({
+                icon: 'success',
+                text: `Compra Finalizada! Su numero de orden es ${res.id}`,
+            })
+            eliminarAll()
         }).catch((err) => {
             console.log(err)
         })
-        return mySwal.fire({
-            icon: 'success',
-            text: `Compra Finalizada!`,
-            //button: <Link to='/' element={<ItemListContainer/>}>"Vuelve al Home"</Link>
-            
-        })
-        
-        
-        
+    }
+    const chequeoCorreo = () => {
+        if(document.getElementById('email').value !== document.getElementById('emailConfirmacion').value){
+            mySwal.fire({
+                icon: 'error',
+                text: `los correos no coinciden`
+            })
+        }else{
+            return createOrder()
+        }   
     }
   return (
     <div className="formContainer">
@@ -55,12 +61,20 @@ const Formulario = () => {
         <label for="email" className="placeholder">Email</label>
       </div>
       <div className="input-container ic2">
+        <input id="emailConfirmacion" class="input" type="text" placeholder="Confirme su email" />
+        <div className="cut"></div>
+        <label for="emailConfirmacion" className="placeholder">Confirme su email</label>
+      </div>
+      <div className="input-container ic2">
         <input id="phone" className="input" type="text" placeholder="Phone" />
         <div className="cut cut-short"></div>
         <label for="phone" className="placeholder">Phone</label>
       </div>
-      <button onClick={createOrder} type="text" className="submit">Comprar</button>
-    </div>
+        <Link to='/'>
+            <button onClick={chequeoCorreo} type="text" className="submit">Comprar</button>
+        </Link>
+      </div>
+
     </div>
   )
 }

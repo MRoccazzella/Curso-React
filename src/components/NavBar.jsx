@@ -22,7 +22,7 @@ const NavBar = () => {
           <NavLink to="/categorys/Salsas" className={({isActive})=> isActive ? "link-activo": "link"}>Salsas</NavLink>
         </div>
         <div className="d-flex justify-content-center">
-          {cart.length !== 0 && <Link to="/carrito"><CartWidget/></Link>}
+          <Link to="/carrito"><CartWidget/></Link>
         </div>
     </div>
   )
