@@ -1,5 +1,5 @@
 
-<div style="width:100%;height:0;padding-bottom:49%;position:relative;"><iframe src="https://giphy.com/embed/VHjzXptlh69Lb6wf8J" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/VHjzXptlh69Lb6wf8J">via GIPHY</a></p>
+<p><img src="https://giphy.com/gifs/VHjzXptlh69Lb6wf8J" width="500px" height="320px"/></p>
 
 # Getting Started with Create React App
 
