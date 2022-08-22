@@ -9,7 +9,6 @@ import Formulario from './components/Formulario/Formulario';
 
 function App() {
   return (
-    <>
     <Provider>
       <BrowserRouter>
         <NavBar />
@@ -22,9 +21,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </Provider>
-    
-    </>
-
   );
 }
 

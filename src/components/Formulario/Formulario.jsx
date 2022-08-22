@@ -10,7 +10,7 @@ const Formulario = () => {
     const {cart, total, eliminarAll} = useContext(CartContext)
     let newDate = new Date()
     const mySwal = withReactContent(Swal)
-    const createOrder =(e) => {
+    const createOrder =() => {
         
 
         const db = getFirestore()

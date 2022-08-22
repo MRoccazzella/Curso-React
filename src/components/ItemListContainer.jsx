@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react';
-import productos from '../mock/products'
 import ItemList from './ItemList'
 import Loader from './Loader/Loader';
 import { useParams } from 'react-router-dom';
