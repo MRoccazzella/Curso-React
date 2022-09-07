@@ -1,7 +1,7 @@
 .formContainer{
     width: 100vw;
     min-height: 90vh;
-    background-image: url("../../../public/images/portada.form.jpeg");
+    background-image: url("../../images/portada.form.jpeg");
     background-repeat: no-repeat;
     background-size: auto;
     display: flex;

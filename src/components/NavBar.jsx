@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget";
 import {Link, NavLink} from "react-router-dom";
-
+import logo from '../images/icono-hamburguesa.png'
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
       
         <div className="contenedor-icono justify-content-center align-items-center">
           <Link to='/' style={{textDecoration: "none"}}>
-            <img className="logo" src ='/images/icono-hamburguesa.png' alt="" />
+            <img className="logo" src ={logo} alt="logo" />
             <div className="brand-name">
               <p className="nombre-1">MR <span className="nombre-2">Burgers</span></p>
             </div>
