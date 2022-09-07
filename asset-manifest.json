@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.56b0757b.css",
-    "main.js": "/static/js/main.e21ac3e6.js",
-    "static/js/787.b37231c1.chunk.js": "/static/js/787.b37231c1.chunk.js",
-    "static/media/portada.form.jpeg": "/static/media/portada.form.b67aa77bcf485f6e08b2.jpeg",
-    "index.html": "/index.html",
-    "main.56b0757b.css.map": "/static/css/main.56b0757b.css.map",
-    "main.e21ac3e6.js.map": "/static/js/main.e21ac3e6.js.map",
-    "787.b37231c1.chunk.js.map": "/static/js/787.b37231c1.chunk.js.map"
+    "main.css": "/Curso-React/static/css/main.54979540.css",
+    "main.js": "/Curso-React/static/js/main.8cac87a0.js",
+    "static/js/787.b37231c1.chunk.js": "/Curso-React/static/js/787.b37231c1.chunk.js",
+    "static/media/portada.form.jpeg": "/Curso-React/static/media/portada.form.b67aa77bcf485f6e08b2.jpeg",
+    "index.html": "/Curso-React/index.html",
+    "main.54979540.css.map": "/Curso-React/static/css/main.54979540.css.map",
+    "main.8cac87a0.js.map": "/Curso-React/static/js/main.8cac87a0.js.map",
+    "787.b37231c1.chunk.js.map": "/Curso-React/static/js/787.b37231c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56b0757b.css",
-    "static/js/main.e21ac3e6.js"
+    "static/css/main.54979540.css",
+    "static/js/main.8cac87a0.js"
   ]
 }
