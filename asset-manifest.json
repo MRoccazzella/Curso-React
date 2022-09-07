@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MRoccazzella/Curso-React/static/css/main.a0334c19.css",
-    "main.js": "/MRoccazzella/Curso-React/static/js/main.8f45af4a.js",
-    "static/js/787.b37231c1.chunk.js": "/MRoccazzella/Curso-React/static/js/787.b37231c1.chunk.js",
-    "static/media/portada.form.jpeg": "/MRoccazzella/Curso-React/static/media/portada.form.b67aa77bcf485f6e08b2.jpeg",
-    "index.html": "/MRoccazzella/Curso-React/index.html",
-    "main.a0334c19.css.map": "/MRoccazzella/Curso-React/static/css/main.a0334c19.css.map",
-    "main.8f45af4a.js.map": "/MRoccazzella/Curso-React/static/js/main.8f45af4a.js.map",
-    "787.b37231c1.chunk.js.map": "/MRoccazzella/Curso-React/static/js/787.b37231c1.chunk.js.map"
+    "main.css": "/Curso-React/static/css/main.54979540.css",
+    "main.js": "/Curso-React/static/js/main.a38d7cbb.js",
+    "static/js/787.b37231c1.chunk.js": "/Curso-React/static/js/787.b37231c1.chunk.js",
+    "static/media/portada.form.jpeg": "/Curso-React/static/media/portada.form.b67aa77bcf485f6e08b2.jpeg",
+    "index.html": "/Curso-React/index.html",
+    "main.54979540.css.map": "/Curso-React/static/css/main.54979540.css.map",
+    "main.a38d7cbb.js.map": "/Curso-React/static/js/main.a38d7cbb.js.map",
+    "787.b37231c1.chunk.js.map": "/Curso-React/static/js/787.b37231c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0334c19.css",
-    "static/js/main.8f45af4a.js"
+    "static/css/main.54979540.css",
+    "static/js/main.a38d7cbb.js"
   ]
 }
