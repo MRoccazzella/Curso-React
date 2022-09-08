@@ -13,8 +13,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
           <Routes>
-            <Route path='/Curso-React' element={<ItemListContainer/>} />
-            <Route path='/' element={<ItemListContainer/>} />
+            <Route path='./' element={<ItemListContainer/>} />
             <Route path='/item/:id' element={<ItemDetailContainer />} />
             <Route path='/categorys/:category' element={<ItemListContainer/>} />
             <Route path='/carrito' element={<Cart/>}/>
