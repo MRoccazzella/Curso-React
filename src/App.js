@@ -18,7 +18,7 @@ function App() {
             <Route path='/categorys/:category' element={<ItemListContainer/>} />
             <Route path='/carrito' element={<Cart/>}/>
             <Route path='/formulario' element={<Formulario/>}> </Route>
-        </Routes>
+          </Routes>
       </BrowserRouter>
     </Provider>
   );
