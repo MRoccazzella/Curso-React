@@ -9,7 +9,7 @@ const Cart = () => {
         return (
             <div className="noCartContainer">
                 <h2>No hay productos en el carrito</h2>
-                <h3>Dirigase al <Link to='/'>Home</Link></h3>
+                <h3>Dirigase al <Link to='/Curso-React'>Home</Link></h3>
             </div>
             )
     }

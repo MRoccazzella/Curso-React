@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="navbar container-fluid">
       
         <div className="contenedor-icono justify-content-center align-items-center">
-          <Link to='/' style={{textDecoration: "none"}}>
+          <Link to='/Curso-React' style={{textDecoration: "none"}}>
             <img className="logo" src ={logo} alt="logo" />
             <div className="brand-name">
               <p className="nombre-1">MR <span className="nombre-2">Burgers</span></p>
@@ -15,7 +15,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="secciones d-flex justify-content-evenly">
-          <NavLink to="/" className={({isActive})=> isActive ? "link-activo": "link"}>Home</NavLink>
+          <NavLink to="/Curso-React" className={({isActive})=> isActive ? "link-activo": "link"}>Home</NavLink>
           <NavLink to="/categorys/Boxes" className={({isActive})=> isActive ? "link-activo": "link"}>Burger Boxes</NavLink>
           <NavLink to="/categorys/Salsas" className={({isActive})=> isActive ? "link-activo": "link"}>Salsas</NavLink>
         </div>
