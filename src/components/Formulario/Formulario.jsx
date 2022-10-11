@@ -70,7 +70,7 @@ const Formulario = () => {
         <div className="cut cut-short"></div>
         <label for="phone" className="placeholder">Phone</label>
       </div>
-        <Link to='/'>
+        <Link to='/Curso-React'>
             <button onClick={chequeoCorreo} type="text" className="submit">Comprar</button>
         </Link>
       </div>
